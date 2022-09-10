@@ -4,8 +4,8 @@
   word-wrap: break-word;
 }
 
-.css-1osj8n2-MuiGrid-root {
+.home__main--content {
   display: flex;
   flex-direction: column !important;
-  gap: 15px !important;
+  gap: 10px;
 }
