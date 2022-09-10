@@ -1,0 +1,33 @@
+.newpost__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.newpost__title {
+  text-align: center;
+  font-weight: 600;
+}
+
+.newpost__upload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0;
+  gap: 20px;
+}
+
+.newpost__upload i {
+  font-size: 100px;
+  color: #bebebe;
+}
+
+.newpost__content {
+  font-size: 20px;
+  font-weight: 200 !important;
+}
+
+.newpost__button {
+  background-color: #0095f6;
+  text-transform: unset !important;
+  font-family: "Nunito", sans-serif !important;
+}

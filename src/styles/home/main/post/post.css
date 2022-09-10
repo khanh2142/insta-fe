@@ -1,0 +1,233 @@
+.post__container {
+  border: 1px solid rgb(219, 219, 219);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.post__container--head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.post__head--user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.post__head--avatar {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: radial-gradient(
+      circle farthest-corner at 35% 90%,
+      #fec564,
+      transparent 50%
+    ),
+    radial-gradient(circle farthest-corner at 0 130%, #fec564, transparent 50%),
+    radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%),
+    radial-gradient(
+      ellipse farthest-corner at 20% -50%,
+      #5258cf,
+      transparent 50%
+    ),
+    radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%),
+    radial-gradient(
+      ellipse farthest-corner at 60% -20%,
+      #893dc2,
+      transparent 50%
+    ),
+    radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent),
+    linear-gradient(
+      #6559ca,
+      #bc318f 30%,
+      #e33f5f 50%,
+      #f77638 70%,
+      #fec66d 100%
+    );
+}
+
+.post__avatar--image {
+  background-position: 50% 50%;
+  background-size: cover;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+}
+
+.post__head--nickname {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.post__head--setting {
+  cursor: pointer;
+}
+
+.post__head--setting i {
+  font-size: 18px;
+}
+
+.post__setting--container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.post__setting--container:focus {
+  outline: none;
+}
+
+.post__setting--button {
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  cursor: pointer;
+}
+
+.post__setting--button::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color: rgb(219, 219, 219);
+}
+
+.post__setting--button:last-child::after {
+  display: none;
+}
+
+.post__setting--danger {
+  color: #ed4956;
+  font-weight: 800;
+}
+
+.post__image {
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  width: calc(100% + 1px);
+  min-height: 300px;
+  height: auto;
+}
+
+.post__function {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.post__function--main {
+  display: flex;
+  gap: 15px;
+}
+
+.post__function--item {
+  cursor: pointer;
+}
+
+.post__function--item:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.post__function--item i {
+  font-size: 20px;
+}
+
+.post__like {
+  padding: 0 10px 0px 10px;
+  display: flex;
+  gap: 5px;
+  font-size: 15px;
+}
+
+.post__like--content {
+  font-weight: 800;
+}
+
+.post__content {
+  padding: 0 10px;
+  font-size: 15px !important;
+}
+
+.post__comment {
+  padding: 0 10px;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 15px;
+}
+
+.post__time {
+  padding: 10px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.post__comment--container {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  gap: 10px;
+}
+
+.post__comment--emoji {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.post__comment--emoji i {
+  font-size: 25px;
+}
+
+.post__comment--area {
+  width: calc(100% - 30px);
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.post__area--input {
+  font-size: 16px;
+  border: none;
+  width: calc(100% - 50px);
+}
+
+.post__area--input:focus {
+  outline: none;
+}
+
+.post__area--button {
+  background-color: #fff;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #0095f6;
+  width: 50px;
+  cursor: pointer;
+}
+
+.post__area--button.disabled {
+  opacity: 0.5;
+  cursor: default;
+}

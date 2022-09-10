@@ -1,0 +1,23 @@
+.personalPage__menu--item {
+  font-family: "Nunito", sans-serif !important;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 200px;
+}
+
+.personalPage__menu--icon {
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.personalPage__menu--icon i {
+  font-size: 18px;
+}
+
+.css-1poimk-MuiPaper-root-MuiMenu-paper-MuiPaper-root-MuiPopover-paper {
+  top: 60px !important;
+  padding: 0 !important;
+}

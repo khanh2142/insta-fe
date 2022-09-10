@@ -1,0 +1,27 @@
+.activity__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px;
+  text-align: center;
+  width: 300px;
+}
+
+.activity__icon {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.activity__icon i {
+  font-size: 25px;
+}
+
+.css-3bmhjh-MuiPaper-root-MuiPopover-paper {
+  top: 60px !important;
+}

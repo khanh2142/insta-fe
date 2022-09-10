@@ -1,0 +1,11 @@
+.home__container {
+  padding: 80px 80px 1000px !important;
+  z-index: 1000 !important;
+  word-wrap: break-word;
+}
+
+.css-1osj8n2-MuiGrid-root {
+  display: flex;
+  flex-direction: column !important;
+  gap: 15px !important;
+}

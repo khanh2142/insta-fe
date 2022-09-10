@@ -1,0 +1,24 @@
+.story__container {
+  border: 1px solid rgb(219, 219, 219);
+  border-radius: 5px;
+  width: 100% !important;
+}
+
+.slick-prev,
+.slick-next {
+  background-color: transparent !important;
+  z-index: 10;
+}
+
+.slick-prev {
+  left: 0px;
+}
+
+.slick-next {
+  right: 0px;
+}
+
+.slick-prev::before,
+.slick-next::before {
+  color: #bebebe;
+}
