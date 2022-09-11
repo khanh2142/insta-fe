@@ -82,6 +82,7 @@
 }
 
 /* LIST */
+
 .header__list {
   display: flex;
   justify-content: end;

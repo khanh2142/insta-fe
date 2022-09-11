@@ -25,6 +25,7 @@ const Suggest = () => {
                     avatar={item.avatar}
                     nickname={item.nickname}
                     fullname={item.fullname}
+                    image={item.image}
                   />
                 )
               );

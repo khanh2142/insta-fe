@@ -65,7 +65,7 @@ const Inbox = () => {
 
 const Explore = () => {
   return (
-    <Link to="/" className="header__list--icon">
+    <Link to="explore" className="header__list--icon">
       <i class="fa-regular fa-compass"></i>
     </Link>
   );

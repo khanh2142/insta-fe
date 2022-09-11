@@ -37,6 +37,7 @@ const Post = (props) => {
                 avatar={props.avatar}
                 nickname={props.nickname}
                 image={props.image}
+                isFollowing={true}
               />
             )}
           </div>

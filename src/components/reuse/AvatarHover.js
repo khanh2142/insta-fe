@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import "../../styles/reuse/avatarHover.css";
 import numberWithCommas from "./function/numberWithCommas";
@@ -12,12 +13,15 @@ const AvatarHover = (props) => {
       onMouseOver={(e) => e.preventDefault()}
     >
       <div className="avatarHover__user">
-        <div
+        <Link
+          to={props.nickname}
           className="avatarHover__user--avatar"
           style={{ backgroundImage: `url(${props.avatar})` }}
-        ></div>
+        ></Link>
         <div className="avatarHover__user--info">
-          <div className="avatarHover__info--nickname">{props.nickname}</div>
+          <Link to={props.nickname} className="avatarHover__info--nickname">
+            {props.nickname}
+          </Link>
           <div className="avatarHover__info--desc">Description here !</div>
         </div>
       </div>
@@ -56,12 +60,18 @@ const AvatarHover = (props) => {
           style={{ backgroundImage: `url(${props.image})` }}
         ></div>
       </div>
-      <div className="avatarHover__contact">
-        <div className="avatarHover__contact--item">Message</div>
-        <div className="avatarHover__contact--item contact--strong">
-          Following
+      {props.isFollowing ? (
+        <div className="avatarHover__contact">
+          <div className="avatarHover__contact--item">Message</div>
+          <div className="avatarHover__contact--item contact--strong">
+            Following
+          </div>
         </div>
-      </div>
+      ) : (
+        <div className="avatarHover__following">
+          <div className="avatarHover__following--button">Follow</div>
+        </div>
+      )}
     </div>
   );
 };
