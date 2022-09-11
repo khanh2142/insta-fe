@@ -8,6 +8,8 @@ import Slider from "react-slick";
 import "../../../../styles/home/main/story/story.css";
 import UserStory from "./UserStory";
 
+import data from "../../data.json";
+
 const Story = () => {
   const settings = {
     dots: false,
@@ -19,38 +21,17 @@ const Story = () => {
   return (
     <div className="story__container">
       <Slider {...settings}>
-        <UserStory
-          nickname="khanh214213123212"
-          image="https://cdn.vn.garenanow.com/web/lol-product/home/images/Lan_h3lpm3/01_2022/DTCL/Chibi_Jinx_Firecracker.png"
-        />
-        <UserStory
-          nickname="khanh2142"
-          image="https://cdn.vn.garenanow.com/web/lol-product/home/images/Lan_h3lpm3/01_2022/DTCL/Chibi_Jinx_Firecracker.png"
-        />
-        <UserStory
-          nickname="khanh2142"
-          image="https://cdn.vn.garenanow.com/web/lol-product/home/images/Lan_h3lpm3/01_2022/DTCL/Chibi_Jinx_Firecracker.png"
-        />
-        <UserStory
-          nickname="khanh2142"
-          image="https://cdn.vn.garenanow.com/web/lol-product/home/images/Lan_h3lpm3/01_2022/DTCL/Chibi_Jinx_Firecracker.png"
-        />
-        <UserStory
-          nickname="khanh2142"
-          image="https://cdn.vn.garenanow.com/web/lol-product/home/images/Lan_h3lpm3/01_2022/DTCL/Chibi_Jinx_Firecracker.png"
-        />
-        <UserStory
-          nickname="khanh2142"
-          image="https://cdn.vn.garenanow.com/web/lol-product/home/images/Lan_h3lpm3/01_2022/DTCL/Chibi_Jinx_Firecracker.png"
-        />
-        <UserStory
-          nickname="khanh2142"
-          image="https://cdn.vn.garenanow.com/web/lol-product/home/images/Lan_h3lpm3/01_2022/DTCL/Chibi_Jinx_Firecracker.png"
-        />
-        <UserStory
-          nickname="khanh2142"
-          image="https://cdn.vn.garenanow.com/web/lol-product/home/images/Lan_h3lpm3/01_2022/DTCL/Chibi_Jinx_Firecracker.png"
-        />
+        {data
+          ? data.map((item) => {
+              return (
+                <UserStory
+                  key={item.nickname}
+                  nickname={item.nickname}
+                  image={item.avatar}
+                />
+              );
+            })
+          : ""}
       </Slider>
     </div>
   );
