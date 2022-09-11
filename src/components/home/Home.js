@@ -10,10 +10,15 @@ import Account from "./social/account/Account";
 import Suggest from "./social/suggest/Suggest";
 
 import data from "./data.json";
+import { Routes, Route } from "react-router-dom";
+import DetailPost from "./main/post/DetailPost";
 
 const Home = () => {
   return (
     <div className="home">
+      <Routes>
+        <Route path="/post/:id" element={<DetailPost />}></Route>
+      </Routes>
       <Container className="home__container">
         <Grid container className="home__container--box">
           <Grid
@@ -38,6 +43,7 @@ const Home = () => {
                       content={item.content}
                       comments={item.comment}
                       time={item.time}
+                      id={item.id}
                     />
                   );
                 })

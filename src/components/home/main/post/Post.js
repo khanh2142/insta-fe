@@ -10,10 +10,12 @@ import Separate from "../../../reuse/Separate";
 import AvatarHover from "../../../reuse/AvatarHover";
 
 import numberWithCommas from "../../../reuse/function/numberWithCommas";
+import DetailPost from "./DetailPost";
 
 const Post = (props) => {
   const [open, setOpen] = useState(false);
   const [avatarHover, setAvatarHover] = useState(false);
+  const [openDetail, setOpenDetail] = useState(false);
 
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -112,9 +114,21 @@ const Post = (props) => {
           <div className="post__function--item btn--like">
             <i className="fa-regular fa-heart"></i>
           </div>
-          <div className="post__function--item">
+          <div
+            className="post__function--item"
+            onClick={() => setOpenDetail(true)}
+          >
             <i className="fa-regular fa-comment"></i>
           </div>
+          <Modal
+            open={openDetail}
+            onClose={() => setOpenDetail(false)}
+            aria-labelledby="modal-modal-title"
+            aria-describedby="modal-modal-description"
+            disableScrollLock
+          >
+            <DetailPost id={props.id}></DetailPost>
+          </Modal>
           <div className="post__function--item">
             <i className="fa-regular fa-paper-plane"></i>
           </div>

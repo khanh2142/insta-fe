@@ -22,6 +22,7 @@ const Suggest = () => {
               return (
                 index !== 0 && (
                   <SuggestItem
+                    key={item.id}
                     avatar={item.avatar}
                     nickname={item.nickname}
                     fullname={item.fullname}

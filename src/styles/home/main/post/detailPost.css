@@ -1,0 +1,33 @@
+.detailPost__container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  height: 70%;
+  background-color: #000;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.detailPost__container--image {
+  object-fit: contain;
+  width: 100%;
+  margin: auto;
+}
+
+.detailPost__container--content {
+  position: relative;
+  background-color: #fff;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.detailPost__content--function {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
