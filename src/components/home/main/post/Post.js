@@ -18,6 +18,10 @@ const style = {
   p: 4,
 };
 
+function numberWithCommas(x) {
+  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+}
+
 const Post = (props) => {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
@@ -79,16 +83,17 @@ const Post = (props) => {
               Embed
             </div>
 
-            <div className="post__setting--button" tabIndex={1}>
+            <div
+              className="post__setting--button"
+              tabIndex={1}
+              onClick={handleClose}
+            >
               Cancel
             </div>
           </div>
         </Modal>
       </div>
-      <div
-        className="post__image"
-        style={{ backgroundImage: `url(${props.image})` }}
-      ></div>
+      <img className="post__image" src={props.image}></img>
       <div className="post__function">
         <div className="post__function--main">
           <div className="post__function--item">
@@ -110,7 +115,7 @@ const Post = (props) => {
 
       <div className="post__like">
         <span className="post__like--content post__like--quantity">
-          {props.likes}
+          {numberWithCommas(props.likes)}
         </span>
         <span className="post__like--content">likes</span>
       </div>
@@ -119,7 +124,9 @@ const Post = (props) => {
         <strong>{props.nickname}</strong> {props.content}
       </p>
 
-      <div className="post__comment">View all {props.comments} comments</div>
+      <div className="post__comment">
+        View all {numberWithCommas(props.comments)} comments
+      </div>
 
       <div className="post__time">{props.time} ago</div>
 

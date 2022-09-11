@@ -31,3 +31,9 @@
   text-transform: unset !important;
   font-family: "Nunito", sans-serif !important;
 }
+
+@media (max-width: 600px) {
+  .newpost__container {
+    width: 80% !important;
+  }
+}

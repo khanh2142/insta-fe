@@ -126,10 +126,6 @@
 }
 
 @media (max-width: 600px) {
-  .logo__container {
-  }
-  .list {
-  }
   .header__list {
     gap: 20px;
   }
