@@ -54,7 +54,7 @@
 .userStory__nickname {
   font-size: 13px;
   letter-spacing: 0.01em;
-  max-width: 70px;
+  max-width: 60px;
   overflow: hidden;
   position: relative;
   text-align: center;

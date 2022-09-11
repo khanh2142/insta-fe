@@ -1,0 +1,38 @@
+.suggestItem__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.suggestItem__container--user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.suggestItem__user--avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.suggestItem__user--info {
+  display: flex;
+  flex-direction: column;
+}
+
+.suggestItem__user--nickname {
+  font-weight: 800;
+}
+.suggestItem__follow {
+  font-weight: 800;
+  color: #0095f6;
+  font-size: 13px;
+}
+
+.suggestItem__user--fullname {
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.7);
+}

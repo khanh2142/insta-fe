@@ -1,0 +1,30 @@
+.suggest__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.suggest__container--title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.suggest__title--content {
+  text-transform: capitalize;
+  font-weight: 800;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 10px;
+}
+
+.suggest__title--link {
+  font-size: 13px;
+  font-weight: 800;
+  color: #000;
+  text-transform: capitalize;
+}
+
+.suggest__container--list {
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+  gap: 10px;
+}

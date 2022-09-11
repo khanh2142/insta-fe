@@ -7,6 +7,8 @@ import { Link } from "react-router-dom";
 import "../../../styles/header/list/personalPage.css";
 import Separate from "../../reuse/Separate";
 
+import data from "../../home/data.json";
+
 const PersonalPage = () => {
   const [anchorEl, setAnchorEl] = useState(null);
 
@@ -30,7 +32,7 @@ const PersonalPage = () => {
       >
         <Avatar
           alt="Remy Sharp"
-          src="/static/images/avatar/1.jpg"
+          src={data[0].avatar}
           style={{ width: "28px", height: "28px" }}
         />
       </Link>

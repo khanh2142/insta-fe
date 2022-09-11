@@ -6,7 +6,8 @@
     "like": 1234,
     "content": "Ra mắt Linh Thú Thế Giới Rồng: Yasuo Tí Nị, Yasuo Long Kiếm Tí Nị, Burno, và Poggles từ 10/06/2022",
     "comment": 400,
-    "time": "3 hours"
+    "time": "3 hours",
+    "fullname": "Nguyễn Bá Khánh"
   },
   {
     "nickname": "yasuo.chibi",
@@ -15,7 +16,8 @@
     "like": 5555,
     "content": "Ngoài ra, bạn cũng có thể mua Trứng Linh Thú Thế Giới Rồng với khả năng nở ra biến thể của 2 loại Linh Thú là Burno, Poggles và đặc biệt nhất là Yasuo Long Kiếm Tí Nị.",
     "comment": 200,
-    "time": "1 hours"
+    "time": "1 hours",
+    "fullname": "Yasuo"
   },
   {
     "nickname": "zoe.kimlong",
@@ -24,7 +26,8 @@
     "like": 455,
     "content": "Tham gia Đại Chiến Tối Thượng - Rinh ngàn đồ hiệu, săn Ryze Vinh Quang từ 02/09 đến 08/09",
     "comment": 100,
-    "time": "4 hours"
+    "time": "4 hours",
+    "fullname": "Zoe"
   },
   {
     "nickname": "lux.hvcb",
@@ -33,7 +36,8 @@
     "like": 1122,
     "content": "Từ 00:30 ngày 02/09/2022 đến 23:59 ngày 08/09/2022, khi quy đổi RP tới mốc tương ứng bạn sẽ được tặng thêm 80% giá trị RP, rất hấp dẫn phải không nào.",
     "comment": 300,
-    "time": "2 hours"
+    "time": "2 hours",
+    "fullname": "Lux"
   },
   {
     "nickname": "tcscn.camile",
@@ -42,7 +46,8 @@
     "like": 1232,
     "content": "Chỉ có một vài chiến binh 'kì cựu' trên khắp thiên hà này, và những kẻ có được danh hiệu đó thì hoàn toàn không phải ngẫu nhiên. Là chỉ huy của biệt đội Chiến Hạm Xung Kích vừa được thành lập bởi RSM, Camille là một chỉ huy tàn nhẫn, toan tính, đáng sợ, và sẵn sàng sử dụng tối đa sức mạnh của Chiến Giáp Y03-Principality lên bất kỳ mục tiêu xấu số nào dám ngáng đường ả.",
     "comment": 5500,
-    "time": "1 hours"
+    "time": "1 hours",
+    "fullname": "Camile"
   },
   {
     "nickname": "xayah.clong",
@@ -51,7 +56,8 @@
     "like": 122,
     "content": "Tham gia 'Ghép Đôi' - Ghép cặp hoàn hảo, sắm đồ rẻ như ý từ 11:00 26/08 đến 23:59 01/09  ",
     "comment": 300,
-    "time": "2 hours"
+    "time": "2 hours",
+    "fullname": "Xayah"
   },
   {
     "nickname": "lulu.hlv",
@@ -60,7 +66,8 @@
     "like": 1022,
     "content": "Tham gia 'Thu Phục Tiểu Quái' - Truy tìm bảo bối, chiến đấu cùng Huấn Luyện Viên từ 12/08 đến 18/08",
     "comment": 300,
-    "time": "2 hours"
+    "time": "2 hours",
+    "fullname": "Lulu"
   },
   {
     "nickname": "kaisa.thuylong",
@@ -69,7 +76,8 @@
     "like": 42422,
     "content": "Đã có những thay đổi nhất định trong phiên bản DTCL 12.17 đầu mùa 7.5 những thay đổi này xuất hiện như một thủ tục của bất kỳ phiên bản mùa mới hoặc giữa mùa DTCL nào khác.",
     "comment": 1200,
-    "time": "1 month"
+    "time": "1 month",
+    "fullname": "Kaisa"
   },
   {
     "nickname": "teemo",
@@ -78,6 +86,7 @@
     "like": 6122,
     "content": "Từ 00:30 ngày 19/08/2022 đến 23:59 ngày 25/08/2022, khi quy đổi RP tới mốc tương ứng bạn sẽ được tặng thêm 40% giá trị RP, rất hấp dẫn phải không nào.",
     "comment": 600,
-    "time": "6 days"
+    "time": "6 days",
+    "fullname": "Teemo"
   }
 ]

@@ -4,8 +4,34 @@
   word-wrap: break-word;
 }
 
+.home__container--box {
+  gap: 40px;
+  justify-content: center;
+}
+
 .home__main--content {
   display: flex;
   flex-direction: column !important;
   gap: 10px;
+}
+
+@media (max-width: 1200px) {
+  .home__container {
+    padding: 80px 40px 80px 40px !important;
+  }
+
+  .home__container--box {
+    gap: 20px;
+    justify-content: center;
+  }
+
+  /* .home__main--content {
+    margin: 0 auto !important;
+  } */
+}
+
+@media (max-width: 600px) {
+  .home__container {
+    padding: 80px 5px 80px 5px !important;
+  }
 }
