@@ -20,6 +20,8 @@
 }
 
 .post__head--avatar {
+  cursor: pointer;
+  position: relative;
   width: 42px;
   height: 42px;
   display: flex;
@@ -119,9 +121,6 @@
 }
 
 .post__image {
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: cover;
   width: calc(100% + 1px);
   height: auto;
 }

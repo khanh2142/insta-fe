@@ -1,42 +1,54 @@
-import React from "react";
+import React, { useState } from "react";
 
 import "../../../../styles/home/main/post/post.css";
 
-import { Box, Button, Typography, Modal } from "@mui/material";
+import { Modal, Popover, Typography } from "@mui/material";
+
+import { Link } from "react-router-dom";
 
 import Separate from "../../../reuse/Separate";
+import AvatarHover from "../../../reuse/AvatarHover";
 
-const style = {
-  position: "absolute",
-  top: "50%",
-  left: "50%",
-  transform: "translate(-50%, -50%)",
-  width: 400,
-  bgcolor: "background.paper",
-  border: "2px solid #000",
-  boxShadow: 24,
-  p: 4,
-};
-
-function numberWithCommas(x) {
-  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
-}
+import numberWithCommas from "../../../reuse/function/numberWithCommas";
 
 const Post = (props) => {
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
+  const [avatarHover, setAvatarHover] = useState(false);
+
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
+
   return (
     <div className="post__container">
       <div className="post__container--head">
         <div className="post__head--user">
-          <div className="post__head--avatar">
+          <div
+            className="post__head--avatar"
+            onMouseOver={() => setAvatarHover(true)}
+            onMouseLeave={() => setAvatarHover(false)}
+          >
             <div
               className="post__avatar--image"
               style={{ backgroundImage: `url(${props.avatar})` }}
             ></div>
+
+            {avatarHover && (
+              <AvatarHover
+                avatar={props.avatar}
+                nickname={props.nickname}
+                image={props.image}
+              />
+            )}
           </div>
-          <div className="post__head--nickname">{props.nickname}</div>
+
+          <Link
+            to={props.nickname}
+            className="post__head--nickname"
+            onMouseOver={() => setAvatarHover(true)}
+            onMouseLeave={() => setAvatarHover(false)}
+          >
+            {props.nickname}
+          </Link>
         </div>
         <div className="post__head--setting" onClick={handleOpen}>
           <i className="fa-solid fa-ellipsis"></i>
@@ -93,10 +105,10 @@ const Post = (props) => {
           </div>
         </Modal>
       </div>
-      <img className="post__image" src={props.image}></img>
+      <img className="post__image" src={props.image} alt={props.content}></img>
       <div className="post__function">
         <div className="post__function--main">
-          <div className="post__function--item">
+          <div className="post__function--item btn--like">
             <i className="fa-regular fa-heart"></i>
           </div>
           <div className="post__function--item">
